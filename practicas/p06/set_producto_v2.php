@@ -9,7 +9,7 @@ $units = $_POST['units'];
 $imagen = $_POST['img'];
 $deleted = 0;
 
-$select = "SELECT * FROM products WHERE marca = ? OR modelo = ?";
+$select = "SELECT * FROM products WHERE marca = ? AND modelo = ?";
 $stmt = $link->prepare($select);
 $stmt->bind_param("ss",$brand, $model);
 $stmt->execute();
