@@ -27,24 +27,34 @@
         alert( "El campo nombre no debe estar vacío" );
         document.myForm.name.focus() ;
         return false;
-        } 
-        if(brand == null || brand == "") {
-            alert( "El campo marca no debe estar vacío" );
-            document.formularioInsertarProductos.brand.focus() ;
+        }
+        if(name.length > 100){
+            alert("el nombre debe ser de 100 caracteres o menos");
+            document.myForm.name.focus() ;
             return false;
-        } 
+        }
         if(model == null || model == "") {
             alert( "El campo modelo no debe estar vacío" );
             document.formularioInsertarProductos.model.focus() ;
             return false;
         } 
+        if(model.length > 25){
+            alert( "El campo modelo debe de contener 25 caracteres o menos." );
+            document.formularioInsertarProductos.model.focus() ;
+            return false;
+        }
         if(price == null || price == "") {
             alert( "El campo precio no debe estar vacío" );
             document.formularioInsertarProductos.price.focus() ;
             return false;
         } 
-        if(details == null || details == "") {
-            alert( "El campo detalles no debe estar vacío" );
+        if(price <= 99.99){
+            alert( "El precio debe ser mayor a 99.99" );
+            document.formularioInsertarProductos.price.focus() ;
+            return false;
+        }
+        if(details.length > 250) {
+            alert( "El campo detalles debe contener al menos 250 caracteres." );
             document.formularioInsertarProductos.details.focus() ;
             return false;
         } 
@@ -53,9 +63,9 @@
             document.formularioInsertarProductos.units.focus() ;
             return false;
         }
-        if(img == null || img == "") {
-            alert( "El campo imagen no debe estar vacío" );
-            document.formularioInsertarProductos.img.focus() ;
+        if(units < 0){
+            alert( "El campo unidades debe ser mayor o igual a 0" );
+            document.formularioInsertarProductos.units.focus() ;
             return false;
         }else validated(); 
     }
@@ -66,14 +76,26 @@
       <fieldset>
         <ul>
             <li><label for="form-name">Nombre:</label> <input type="text" name="name" id="form-name" ></li>
-            <li><label for="form-brand">Marca:</label> <input type="brand" name="brand" id="form-brand" ></li>
+                <fieldset>
+                    <legend>Marca:</legend>
+                
+                    <div>
+                      <input type="radio" id="form-brand" name="brand" value="totis"
+                             checked>
+                      <label for="form-brand">Totis</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="form-brand" name="brand" value="sabritas">
+                      <label for="dewey">Sabritas</label>
+                    </div>
+                </fieldset>
             <li><label for="form-model">Modelo:</label> <input type="model" name="model" id="form-model" ></li>
             <li><label for="form-price">Precio:</label><input type="price" name="price" id="form-price" ></li>
             <li><label for="form-details">Detalles:</label><input type="detalis" name="details" id="form-details"></li>
             <li><label for="form-units">Unidades:</label><input type="units" name="units" id="form-units"></li>
             <li><label for="form-units">Ubicacion de imagen:</label>
             <br><input type="img" name="img" id="form-img"></li>
-            <p>ejemplo: /img/imagen.png</p>
+            <p>ejemplo: img/imagen.png</p>
         <input type="submit" value="Enviar" onsubmit="return validated()">
         <input type="reset">
         </form>
