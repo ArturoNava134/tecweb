@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>ProductApp</title>
+    <!-- BOOTSTRAP 4  -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/superhero/bootstrap.min.css">
+    <style>
+      .navbar {
+        background-color: #343a40;
+      }
+      .navbar-brand {
+        font-size: 28px;
+        font-weight: bold;
+      }
+      .form-control {
+        border-radius: 20px;
+      }
+      .btn-success {
+        background-color: #28a745;
+        border-color: #28a745;
+        border-radius: 20px;
+        font-weight: bold;
+      }
+      .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+        border-radius: 20px;
+        font-weight: bold;
+      }
+      .table td {
+        vertical-align: middle;
+      }
+      .table thead th {
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .table tbody td {
+        text-align: center;
+        font-size: 18px;
+      }
+      .card {
+        border-radius: 20px;
+      }
+      .card-header {
+        background-color: #007bff;
+        border-radius: 20px 20px 0 0;
+        color: #fff;
+        font-weight: bold;
+      }
+      #product-result {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body onload="init()">
+
+    <!-- BARRA DE NAVEGACIÓN  -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href=".">ConvenienceStore</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        
+      </button>
+      
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto"></ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" name="search" id="search" type="search" placeholder="Busca tus productos" aria-label="Search">
+          <button class="btn btn-success my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+      </div>
+    </nav>
+    
+
+    <div class="container">
+      <div class="row p-4">
+        <div class="col-md-5">
+          <div class="card">
+            <div class="card-body">
+              <!-- FORM TO ADD TASKS -->
+              <form id="task-form">
+                <div class="form-group">
+                  <input type="text" id="nombre" placeholder="Nombre" class="form-control">
+                </div>
+                <div class="form-group">
+                  <textarea id="descripcion" cols="30" rows="10" class="form-control" ></textarea>
+                </div>
+                <input type="hidden" id="taskId">
+                <button type="submit" class="btn btn-primary btn-block text-center">
+                  Enviar
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- TABLE  -->
+        <div class="col-md-7">
+          <div class="card my-4" id="task-result">
+            <div class="card-body">
+              <!-- SEARCH -->
+              <ul id="container"></ul>
+            </div>
+          </div>
+
+          <table class="table table-bordered table-sm">
+            <thead>
+              <tr>
+                <td>Id</td>
+                <td>Nombre</td>
+                <td>Marca</td>
+                <td>Modelo</td>
+                <td>Precio</td>
+                <td>Detalles</td>
+                <td>Unidades</td>
+                <td>Borrar</td>
+              </tr>
+            </thead>
+            <tbody id="tasks"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Frontend Logic -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+
+</html>
