@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Computacion</title>
+    <script
+      src="https://kit.fontawesome.com/df59baf6b8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://file.myfontastic.com/t5tNwfwUapz4yDzK3B6sfe/icons.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../../css/estilos.css" />
+    <link rel="stylesheet" href="../../css/estilosCalificacion.css" />
+    <script defer src="stock.js"></script>
+    <script defer src="../../backend/modal.js"></script>
+    <script defer src="../../app.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="contenedor">
+        <a title="Inicio" href="../../Index.php">
+          <img src="../../img/logo.jpg" title="" width="" class="logo"
+        /></a>
+        <span class="icon-menu" id="btn-menu"></span>
+        <nav class="nav" id="nav">
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="../../contacto.html" class="menu__link">Contacto</a>
+            </li>
+            <li class="menu__item">
+              <a href="../../repartidor.html" class="menu__link">Repartidor</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <br />
+    <h2 align="center">Métodos de pago disponibles.</h2>
+    <br />
+    <h4 align="center">Métodos de pago locales (México).</h4>
+    <br />
+    <p align="center">
+      <img src="../../img/Transfer.jpg" alt="" />
+    </p>
+    <br />
+    <p align="center">
+      <i>Transferencia bancaria.</i>
+    </p>
+    <br />
+    <p align="center">
+      Para realizar tu pago por medio de una transferencia bancaria debes enviar
+      tu depósito al siguiente número clabe: 012180015423557842
+    </p>
+    <br />
+    <br />
+    <p align="center">
+      <img src="../../img/Oxxo.png" alt="" />
+    </p>
+    <br />
+    <p align="center">
+      <i>Depósito.</i>
+    </p>
+    <br />
+    <p align="center">
+      Para realizar tu depósito por medio de Oxxo u otra institución que lo
+      permita. Debes solicitar "un depósito a una tarjeta" a la persona
+      encargada de la caja y dictarle el siguiente número: 4152 3137 7385 8787
+    </p>
+    <br />
+    <br />
+    <h4 align="center">Métodos de pago internacionales.</h4>
+    <br />
+    <br />
+    <p align="center">
+      <img src="../../img/paypal.png" alt="" height="200" width="400" />
+    </p>
+    <br />
+    <p align="center">
+      <i>Paypal.</i>
+    </p>
+    <br />
+    <p align="center">
+      Para realizar tu pago por medio de paypal debes entrar al siguiente Link:
+    </p>
+    <p align="center">
+      <a href="https://paypal.me/HuitNetwork?country.x=MX&locale.x=es_XC"
+        >https://paypal.me/HuitNetwork?country.x=MX&locale.x=es_XC</a
+      >
+    </p>
+    <p align="center">Y hacer clic en enviar.</p>
+    <br />
+    <br />
+    <p align="center">
+      <img src="../../img/QR.png" alt="" />
+    </p>
+    <br />
+    <p align="center">
+      <i>Bitcoin.</i>
+    </p>
+    <br />
+    <p align="center">
+      Para realizar tu pago por Coinbase escanea el código QR desde la
+      Aplicación o ingresa la siguiente dirección BTC:
+      3QNGFN5nLTd9GPH2a5TnJDMarQSPvokRvb
+    </p>
+    <br />
+    <br />
+    <br>
+    <form action="../../backend/enviarOrden.php">
+      <input type="submit" name="login" value="Agregar Orden" class="btn btn-info">
+  </form>
+    <p align="center">
+      <script scr="app.js">
+        var precioff = localStorage.getItem("preciof");
+        document.write("El precio a pagar es de " + precioff + " pesos.");
+        /*
+        var carritodecompras = localStorage.getItem('carrito');
+        document.write("Tu pedido contiene"+carritodecompras);
+        */
+      </script>
+    </p>
+    <br>
+   
+    <br />
+    <br />
+    <h4 align="center">
+      Al realizar tu pago envía tu comprobante de pago y una captura de tu
+      carrito al siguiente número de Whatsapp para reclamar tu pedido:
+    </h4>
+    <p align="center"><i>+52 221 514 8227.</i></p>
+    <h4 align="center">
+      O puedes hacer clic en el siguiente botón para reclamar un pedido de
+      manera más rápida:
+    </h4>
+    <br />
+    <a
+      href="https://api.whatsapp.com/send?phone=522215148227&text=Hola,%20quisiera%20reclamar%20un%20pedido,%20te%20env%C3%ADo%20captura%20de%20mi%20comprobante%20de%20pago%20y%20mi%20carrito%20de%20compra."
+      ><p align="center"><button>Enviar comprobante</button></p></a
+    >
+    <br />
+    <br />
+    <br />
+     
+    <a align="CENTER">
+      <div class="container" style="margin: 0 auto;">
+        <div class="post">
+          <div class="text">Gracias por calificarnos!</div>
+        </div>
+        
+        <div class="star-widget">
+          <input type="radio" name="rate" id="rate-5" value="1"/>
+          <label for="rate-5" class="fas fa-star"></label>
+          <input type="radio" name="rate" id="rate-4" value="2"/>
+          <label for="rate-4" class="fas fa-star"></label>
+          <input type="radio" name="rate" id="rate-3" value="3"/>
+          <label for="rate-3" class="fas fa-star"></label>
+          <input type="radio" name="rate" id="rate-2" value="2"/>
+          <label for="rate-2" class="fas fa-star"></label>
+          <input type="radio" name="rate" id="rate-1" value="1"/>
+          <label for="rate-1" class="fas fa-star"></label>
+          <form action="#">
+            <header></header>
+          </form>
+          <form action="http://localhost:8080/tecnologiasweb/practicas/softwareProject/backend/enviarComentariosComputacion.php" method="post">
+          <div class="textarea">
+            <textarea cols="30" placeholder="Cuéntanos tu experiencia." name="comentarios"></textarea>
+          </div>
+          
+          <div class="btn">
+              <button type="submit" onclick="showThanks()">Post</button>
+          </div>
+        
+          </form>
+        </div>
+        </div>
+      </div>
+    </a>
+    <script>
+        const btn = document.querySelector("button");
+        const post = document.querySelector(".post");
+        const widget = document.querySelector(".star-widget");
+
+        function showThanks(){
+          widget.style.display = "none";
+          post.style.display = "block";
+          return false;
+        } 
+        // function setvalue1(){
+        //   var rate = document.getElementById("rate-1");
+        //   console.log(rate);
+        // }
+    </script>
+
+  </body>
+</html>
