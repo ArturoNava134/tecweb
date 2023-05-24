@@ -404,5 +404,23 @@ body{
 	
 }
 
+.coment{
+    width: 500px;
+    background: #2c5a88;
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+.title{
+    text-align: center;
+    font-family: 'calibri';
+    font-size: 30px;
+    color: #00B5E2;
+  }
+
   
  

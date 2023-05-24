@@ -96,5 +96,13 @@ $stock = "SELECT * FROM arquitecturaStock";
 		</tbody>
 		<?php } ?>
 	</table>
+	<form method="post" action="http://localhost:8080/tecnologiasweb/practicas/softwareProject/backend/agregarProductoArquitectura.php">
+		<h2>Formulario para agregar Producto</h2><br>
+		<input class="control" name="Producto" id="form-product" placeholder="Producto"><br><br>
+		<input class="control" size="30" style="height: 120px" name="Descripcion" id="form-description" placeholder="                    Descripcion"><br><br>
+		<input class="control" name="Precio" id="form-price" placeholder="Precio"><br><br>
+		<input class="control" name="Stock" id="form-stock" placeholder="Existencias"><br><br>
+        <input class="boton" type="submit" name="boton" required value="Agregar Producto">
+	</form>
 </body>
 </html>

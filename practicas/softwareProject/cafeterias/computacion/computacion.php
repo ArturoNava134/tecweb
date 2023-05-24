@@ -71,11 +71,13 @@
     <br>
     <br>
     <br>
+     
+    <div class="coment">
     
     <table class="table table-bordered table-sm">
         <thead>
           <tr>
-            <h2>Comentarios</h2>
+            <h2 class="title">Comentarios</h2>
        
           </tr>
           <tr><?php
@@ -86,6 +88,6 @@ include("../../backend/computacionComments.php");
         
         <tbody id="products"></tbody>
       </table>
-
+</div>
 </body>
 </html>

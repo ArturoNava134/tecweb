@@ -75,10 +75,13 @@
     <br>
     <br>
     
+   
+    <div class="coment">
+    
     <table class="table table-bordered table-sm">
         <thead>
           <tr>
-            <h2>Comentarios</h2>
+            <h2 class="title">Comentarios</h2>
        
           </tr>
           <tr><?php
@@ -89,13 +92,6 @@ include("../../backend/italianComments.php");
         
         <tbody id="products"></tbody>
       </table>
-
-
-
-      <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"></script>
-    <!-- Lógica del Frontend -->
- 
+</div>
 </body>
 </html>

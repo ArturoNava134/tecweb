@@ -14,7 +14,7 @@
         <span class="icon-menu" id="btn-menu"></span>
         <nav class="nav" id="nav">
           <ul class="menu">
-            <li class="menu__item"><a href="../contacto.html" class="menu__link">Contacto</a></li>
+            <li class="menu_item"><a href="../contacto.html" class="menu_link">Contacto</a></li>
           </ul>
         </nav>
       </div>
@@ -29,17 +29,13 @@
       <input class="control" name="telefono" id="form-name" placeholder="Ingresa tu telefono">
       
       <div align="CENTER">
-        <input class="boton" type="submit" onclick="alert('Formulario Enviado')" value="Enviar">
+        <input class="button" type="submit" onclick="alert('Formulario Enviado')" value="Enviar">
       </div>
       
-  </section>
-   
-    <footer class="footer">
-        <div class="social">
-           <img src="../img/logo.jpg" alt"" title="" >
+    </section>
             </div>
-        
-        </footer>
-         <script src="js/menu.js"></script>
+
+      <script src="js/menu.js"></script>
   </body>
+
   </html>

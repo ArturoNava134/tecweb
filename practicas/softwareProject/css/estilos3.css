@@ -164,16 +164,17 @@ text-align: center;
 padding: 30px;
 background-image: url(https://media.istockphoto.com/id/1290816941/es/foto/textura-ancha-de-pared-de-ladrillo-azul-marino-mamposter%C3%ADa-de-bloque-oscuro-de-gran-fondo-de.jpg?s=612x612&w=0&k=20&c=v2JN-x-gbNnOdYEY2RlHr7Sx43zO6hTjL4F3RC1jD0I=);
 }
-  .form-register {
-    background: #24303c;
-    padding: 30px;
-    margin: auto;
-    margin-top: 40px;
-    margin-bottom: 60px;
-    border-radius: 4px;
-    font-family: 'calibri';
-    color: white;
-    box-shadow: 7px 13px 37px #000;
+.form-register {
+  width: 400px;
+  background: #24303c;
+  padding: 30px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 13px 37px #000;
   }
   
   .form-register h4 {
@@ -258,4 +259,18 @@ background-image: url(https://media.istockphoto.com/id/1290816941/es/foto/textur
   
     margin-right: 10px;
 
+}
+
+.div{
+  width: 400px;
+  background: #1b4670;
+  padding: 30px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 10px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+  text-align: center;
+  margin-bottom: 50px;
 }

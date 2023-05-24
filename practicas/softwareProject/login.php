@@ -43,11 +43,15 @@
 </head>
 <body>
 <form class="form-register" name="formularioLogin" method="post">
+    <h4>Login</h4><hr><br>
     <label>Nombre de usuario:</label>
-    <input type="text" name="username" placeholder="Ingresa tu nombre de usuario" class="form-control">
+    <input class="control" type="text" name="username" placeholder="Ingresa tu nombre de usuario" >
+    <br>
+    <br>
     <label>Contraseña:</label>
-    <input type="password" name="password" placeholder="Ingresa tu contraseña" class="form-control">
-    <input type="submit" name="login" value="login" class="btn btn-info">
+    <input class="control" type="password" name="password" placeholder="Ingresa tu contraseña">
+    <br><br>
+    <input class="boton"type="submit" name="login" value="login" class="btn btn-info">
 </form>
 </body>
 </html>
