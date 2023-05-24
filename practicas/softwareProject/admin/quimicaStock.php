@@ -1,6 +1,6 @@
 <?php
 include('../conexion.php');
-$stock = "SELECT * FROM quimicaStock";
+$stock = "SELECT * FROM quimicaStock where eliminado = 0";
 
 ?>
 
@@ -67,6 +67,7 @@ $stock = "SELECT * FROM quimicaStock";
 				<th scope="col">Existencias</th>
 				<th scope="col"></th>
 				<th scope="col"></th>
+				<th scope="col"></th>
 			</tr>
 		</thead>
 		<?php $resultado = mysqli_query($conexion, $stock);
@@ -91,7 +92,12 @@ $stock = "SELECT * FROM quimicaStock";
 					<input type = "hidden"name="id" id="form-name" value="<?= $id ?>">
 					<td><input name="boton" type="submit" value="aumentar">
 				</form>
-							
+					
+				<form name="formularioEliminar" method="post" action="http://localhost:8080/tecnologiasweb/practicas/softwareProject/backend/eliminarProductoQuimica.php">
+					<input type = "hidden"name="id" id="form-name" value="<?= $id ?>">
+					<td><input name="boton" type="submit" value="eliminar">
+				</form>
+
 				</tr>
 		</tbody>
 		<?php } ?>
